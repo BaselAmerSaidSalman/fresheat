@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="owner" content="Basel"/>
+        <link rel="stylesheet" href="CSS/booking.css"/>
+        <title>Booking</title>
+    </head>
+    <body>
+        <div class="booking_page_content">
+            <a href="index.html" class="booking_page_cross"> &lt;-- </a>
+            <h1 class="booking_h1">Booking A Table</h1>
+            <form>
+                <input type="text" class="user_name" name="user_name" placeholder="Your Name" required/>
+                <input type="text" class="user_phone_number" name="user_phone_number" placeholder="Phone Number" required/>
+                <select name="Persons" class="person_numbers_list">
+                    <option value="1Person">1 Person</option>
+                    <option value="2Person">2 Person</option>
+                    <option value="3Person">3 Person</option>
+                    <option value="4Person">4 Person</option>
+                    <option value="5Person">5 Person</option>
+                    <option value="6Person">6 Person</option>
+                </select>
+                <input type="date" class="reserve_date" placeholder="Date" required/>
+                <input type="time" class="reserve_time" placeholder="Time" required/>
+                <textarea placeholder="Message"></textarea>
+                <button class="reserve_btn">Book Table</button>
+            </form>
+        </div>
+        <script src="JS/booking.js"></script>
+    </body>
+</html>
