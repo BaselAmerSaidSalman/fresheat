@@ -1,0 +1,963 @@
+body{
+    background-color: #111111;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-image: url("../Images/24259_3-2_1920-1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.header_homepage, .header_about_us, .header_menu, .header_booking ,.header_contact_us{
+    text-decoration: none;
+    position: relative;
+    left: 570px;
+    margin-right: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.header_h1, .header_h2{
+    position: absolute;
+    top: 330px;
+    left: 400px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+.header_h2{
+    top: 400px;
+}
+
+.search_icon, .cart_icon, .logo, .header_h3{
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.header_h3{
+    position: relative;
+    top: 490px;
+    left: 530px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.header_btn, .story_btn, .special_dish_btn, .special_selectors_btn, .reserve_btn{
+    background-color: transparent;
+    color: #E66A00;
+    border: 1px solid #E66A00;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.header_btn:hover, .story_btn:hover, .special_dish_btn:hover, .special_selectors_btn:hover, .reserve_btn:hover{
+    background-color: #E66A00;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+.header_btn{
+    position: relative;
+    top: 500px;
+    left: 650px;
+    z-index: 2;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.homepage_breakfast_image, .homepage_lunch_image, .homepage_dinner_image{
+    width: 400px;
+    height: 600px;
+}
+
+.homepage_breakfast_h3, .homepage_lunch_h3, .homepage_dinner_h3{
+    font-size: 30px;
+}
+
+.homepage_breakfast_link, .homepage_lunch_link, .homepage_dinner_link{
+    text-decoration: none;
+    color: #E66A00;
+}
+
+.homepage_breakfast_image{
+    position: relative;
+    top: 90px;
+    left: 50px;
+    border-radius: 10px;
+}
+
+.homepage_breakfast_h3{
+    position: relative;
+    top: 90px;
+    left: 175px;
+}
+
+.homepage_breakfast_link{
+    position: relative;
+    top: 85px;
+    left: 200px;
+}
+
+.homepage_breakfast_link_line{
+    position: relative;
+    width: 75px;
+    right: 706px;
+    opacity: 0;
+    transition: ease-in-out 0.2 opacity;
+}
+
+.homepage_breakfast_link:hover .homepage_breakfast_link_line, .homepage_lunch_link:hover .homepage_lunch_link_line, .homepage_dinner_link:hover .homepage_dinner_link_line{
+    opacity: 1;
+}
+
+.homepage_breakfast_link:hover, .homepage_lunch_link:hover, .homepage_dinner_link:hover{
+    filter: brightness(2.5);
+}
+
+.breakfast_lunch_dinner_h1{
+    position: relative;
+    top: 150px;
+    left: 500px;
+    font-size: 60px;
+    width: fit-content;
+}
+
+.breakfast_lunch_dinner_p_1{
+    position: relative;
+    top: 150px;
+    left: 525px;
+    transform: scale(1.3);
+    width: fit-content;
+}
+
+.breakfast_lunch_dinner_p_2{
+    position: relative;
+    top: 150px;
+    left: 560px;
+    transform: scale(1.3);
+    width: fit-content;
+}
+
+.breakfast_lunch_dinner_p_3{
+    position: relative;
+    top: 150px;
+    left: 600px;
+    transform: scale(1.3);
+    width: fit-content;
+}
+
+.breakfast_lunch_dinner_p_4{
+    position: relative;
+    top: 150px;
+    left: 680px;
+    transform: scale(1.3);
+    width: fit-content;
+}
+
+.homepage_lunch_image{
+    position: relative;
+    bottom: 500px;
+    left: 555px;
+    border-radius: 10px;
+}
+
+.homepage_lunch_h3{
+    position: relative;
+    bottom: 490px;
+    left: 715px;
+}
+
+.homepage_lunch_link{
+    position: relative;
+    bottom: 490px;
+    left: 713px
+}
+
+.homepage_lunch_link_line{
+    opacity: 0;
+    width: 75px;
+    position: relative;
+    right: 705px;
+}
+
+.homepage_dinner_image{
+    position: relative;
+    bottom: 1375px;
+    left: 1050px;
+    border-radius: 10px;
+}
+
+.homepage_dinner_h3{
+    position: relative;
+    bottom: 1355px;
+    left: 1210px;
+}
+
+.homepage_dinner_link{
+    position: relative;
+    bottom: 1350px;
+    left: 1210px;
+}
+
+.homepage_dinner_link_line{
+    opacity: 0;
+    width: 75px;
+    position: relative;
+    right: 706px;
+}
+
+.breakfast_lunch_dinner{
+    height: 1450px;
+}
+
+
+.story{
+    background-color: #1a1a1a;
+    height: 1200px;
+}
+
+.story_image{
+    width: 600px;
+    height: 800px;
+    position: relative;
+    left: 470px;
+    top: -220px;
+}
+
+.story_h5{
+    position: relative;
+    top: 220px;
+    left: 400px;
+    width: fit-content;
+}
+
+.story_h3_1{
+    position: relative;
+    top: 250px;
+    left: 150px;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.story_h3_2{
+    position: relative;
+    top: 250px;
+    left: 180px;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.story_p_1, .story_p_2, .story_p_3, .story_p_4, .story_p_5{
+    width: fit-content;
+    position: relative;
+    top: 350px;
+    left: 180px;
+    transform: scale(1.5);
+    margin-bottom: 25px;
+}
+
+.story_p_2{
+    position: relative;
+    left: 180px
+}
+
+.story_p_3{
+    position: relative;
+    left: 182px
+}
+
+.story_p_4{
+    position: relative;
+    left: 185px
+}
+
+.story_p_5{
+    position: relative;
+    left: 190px;
+}
+
+.story_h6{
+    position: relative;
+    top: 450px;
+    left: 340px;
+    transform: scale(5);
+}
+
+.story_phone_number{
+    position: relative;
+    bottom: 330px;
+    left: 290px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #E66A00;
+}
+
+.story_btn{
+    text-decoration: none;
+    position: relative;
+    bottom: 200px;
+    left: 100px;
+}
+
+.special_dish{
+    height: 880px;
+}
+
+.special_dish_image{
+    position: relative;
+    top: 50px;
+    width: 700px;
+    height: 800px;
+}
+
+
+.special_dish_h6{
+    position: relative;
+    bottom: 680px;
+    left: 1050px;
+    font-size: 15px;
+}
+
+.special_dish_h3{
+    position: relative;
+    bottom: 650px;
+    left: 840px;
+    font-size: 50px;
+}
+
+.special_dish_p_1{
+    position: relative;
+    bottom: 620px;
+    left: 850px;
+    font-size: 22px;
+}
+
+.special_dish_p_2{
+    position: relative;
+    bottom: 620px;
+    left: 895px;
+    font-size: 22px;
+}
+
+.special_dish_p_3{
+    position: relative;
+    bottom: 620px;
+    left: 880px;
+    font-size: 22px;
+}
+
+del{
+    position: relative;
+    bottom: 590px;
+    left: 950px;
+}
+
+.special_dish_price{
+    position: relative;
+    bottom: 645px;
+    left: 1050px;
+    font-size: 25px;
+    color: #E66A00;
+}
+
+.special_dish_btn{
+    position: relative;
+    bottom: 590px;
+    left: 970px;
+    text-decoration: none;
+}
+
+.special_selectors{
+    background-color: #1a1a1a;
+    height: 2700px;
+}
+
+.special_selectors_1_image, .special_selectors_2_image, .special_selectors_3_image, .special_selectors_4_image, .special_selectors_5_image, .special_selectors_6_image{
+    width: 215px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.special_selectors_pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.special_selectors_h2{
+    position: relative;
+    top: 50px;
+    left: 510px;
+    font-size: 70px;
+}
+
+.special_selectors_1_image{
+    position: relative;
+    top: 100px;
+    left: 50px
+}
+
+.special_selectors_1_h4{
+    position: relative;
+    left: 290px;
+    bottom: 110px;
+    font-size: 25px;
+}
+
+.special_selectors_1_p_1, .special_selectors_1_p_2{
+    position: relative;
+    left: 300px;
+    bottom: 120px;
+}
+
+.special_selectors_1_price{
+    position: relative;
+    bottom: 237px;
+    left: 950px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_1_h5{
+    position: relative;
+    bottom: 282px;
+    left: 580px;
+    background-color: #E66A00;
+    color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.special_selectors_2_image{
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+.special_selectors_2_h4{
+    position: relative;
+    bottom: 227px;
+    left: 290px;
+    font-size: 25px;
+}
+
+.special_selectors_2_p_1, .special_selectors_2_p_2{
+    position: relative;
+    bottom: 235px;
+    left: 300px
+}
+
+.special_selectors_2_price{
+    position: relative;
+    bottom: 353px;
+    left: 950px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_3_image{
+    position: relative;
+    bottom: 90px;
+    left: 50px
+}
+
+.special_selectors_3_h4{
+    position: relative;
+    bottom: 295px;
+    left: 290px;
+    font-size: 25px;
+}
+
+.special_selectors_3_p_1, .special_selectors_3_p_2{
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+}
+
+.special_selectors_3_price{
+    position: relative;
+    bottom: 420px;
+    left: 960px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_4_image{
+    position: relative;
+    bottom: 130px;
+    left: 50px;
+}
+
+.special_selectors_4_h4{
+    position: relative;
+    bottom: 332px;
+    left: 290px;
+    font-size: 25px;
+}
+
+.special_selectors_4_p_1, .special_selectors_4_p_2{
+    position: relative;
+    bottom: 335px;
+    left: 300px;
+}
+
+.special_selectors_4_price{
+    position: relative;
+    bottom: 457px;
+    left: 970px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_4_h5{
+    position: relative;
+    bottom: 502px;
+    left: 495px;
+    background-color: #E66A00;
+    color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.special_selectors_5_image{
+    position: relative;
+    bottom: 230px;
+    left: 50px;
+}
+
+.special_selectors_5_h4{
+    position: relative;
+    bottom: 430px;
+    left: 290px;
+    font-size: 25px;
+}
+
+.special_selectors_5_p_1, .special_selectors_5_p_2{
+    position: relative;
+    bottom: 437px;
+    left: 300px;
+}
+
+.special_selectors_5_price{
+    position: relative;
+    bottom: 556px;
+    left: 900px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_5_h5{
+    position: relative;
+    bottom: 600px;
+    left: 480px;
+    background-color: #E66A00;
+    color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.special_selectors_6_image{
+    position: relative;
+    bottom: 320px;
+    left: 50px;
+}
+
+.special_selectors_6_h4{
+    position: relative;
+    bottom: 520px;
+    left: 295px;
+    font-size: 25px;
+}
+
+.special_selectors_6_p_1, .special_selectors_6_p_2{
+    position: relative;
+    bottom: 525px;
+    left: 305px;
+}
+
+.special_selectors_6_price{
+    position: relative;
+    bottom: 645px;
+    left: 800px;
+    color: #E66A00;
+    transform: scale(1.3);
+}
+
+.special_selectors_h5{
+    position: relative;
+    bottom: 450px;
+    left: 320px;
+    font-size: 40px;
+}
+
+.special_selectors_btn{
+    text-decoration: none;
+    position: relative;
+    bottom: 450px;
+    left: 620px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.customers_reviews_1_person_image, .customers_reviews_2_person_image, .customers_reviews_3_person_image{
+    width: 70px;
+    height: 70px;
+}
+
+.customers_reviews_1_person_image{
+    position: relative;
+    top: 250px;
+    left: 100px;
+}
+
+.customers_reviews_1_person_h5{
+    position: relative;
+    left: 190px;
+    top: 152px;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.customers_reviews_1_person_h6{
+    position: relative;
+    left: 190px;
+    bottom: -127px;
+    font-size: 9px;
+    width: fit-content;
+}
+
+.customers_reviews_1_person_stars{
+    position: relative;
+    bottom: -108px;
+    left: 186px;
+    color: yellow;
+    width: fit-content;
+}
+
+.customers_reviews_1_p_1, .customers_reviews_1_p_2, .customers_reviews_1_p_3{
+    position: relative;
+    left: 110px;
+    top: 240px;
+    width: fit-content;
+}
+
+.customers_reviews_2_person_image{
+    position: relative;
+    left: 600px;
+    bottom: 65px;
+}
+
+.customers_reviews_2_person_h5{
+    font-size: 18px;
+    position: relative;
+    left: 692px;
+    bottom: 162px;
+}
+
+.customers_reviews_2_person_h6{
+    position: relative;
+    left: 695px;
+    bottom: 187px;
+    font-size: 9px;
+}
+
+.customers_reviews_2_person_stars{
+    position: relative;
+    bottom: 207px;
+    left: 692px;
+    color: yellow;
+}
+
+.customers_reviews_2_p_1, .customers_reviews_2_p_2, .customers_reviews_2_p_3{
+    position: relative;
+    left: 600px;
+    bottom: 80px;
+}
+
+.customers_reviews_3_person_image{
+    position: relative;
+    left: 1100px;
+    bottom: 385px;
+}
+
+.customers_reviews_3_person_h5{
+    font-size: 18px;
+    position: relative;
+    bottom: 478px;
+    left: 1192px;
+}
+
+.customers_reviews_3_person_h6{
+    font-size: 9px;
+    position: relative;
+    bottom: 505px;
+    left: 1195px;
+}
+
+.customers_reviews_3_person_stars{
+    color: yellow;
+    position: relative;
+    bottom: 525px;
+    left: 1193px;
+}
+
+.customers_reviews_3_p_1, .customers_reviews_3_p_2, .customers_reviews_3_p_3{
+    position: relative;
+    bottom: 400px;
+    left: 1105px;
+}
+
+.customers_reviews{
+    height: 700px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.reserve{
+    background-color: #1a1a1a;
+    height: 1050px;
+}
+
+.reserve_h2{
+    font-size: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+
+.reserve_phone_number_span{
+    color: #E66A00;
+}
+
+.reserve_h6{
+    font-size: 15px;
+    position: relative;
+    top: 70px;
+    left: 560px;
+}
+
+.user_name{
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 320px;
+}
+
+.user_phone_number{
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 340px;
+}
+
+.person_numbers_list{
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    right: 495px;
+}
+
+option{
+    color: black;
+}
+
+.reserve_date{
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    right: 470px;
+}
+
+.reserve_time{
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 123px;
+    left: 890px;
+}
+
+textarea{
+    background-color: transparent;
+    font-size: 20px;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    top: 240px;
+    left: 73px;
+}
+
+.reserve_btn{
+    position: relative;
+    top: 340px;
+    right: 420px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+footer{
+    height: 700px;
+}
+
+.footer_h1{
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+
+.footer_pages_home, .footer_pages_about, .footer_pages_menu, .footer_pages_review, .footer_pages_contact, .footer_facebook, .footer_instagram, .footer_twitter, .footer_linkedin{
+    text-decoration: none;
+    color: #E66A00;
+    font-size: 20px;
+}
+
+.footer_pages_home:hover, .footer_pages_about:hover, .footer_pages_menu:hover, .footer_pages_review:hover, .footer_pages_contact:hover, .footer_facebook:hover, .footer_instagram:hover, .footer_twitter:hover, .footer_linkedin:hover{
+    filter: brightness(2.5);
+}
+
+.footer_pages_home{
+    position: relative;
+    top: 130px;
+    left: 310px;
+}
+
+.footer_pages_about{
+    position: relative;
+    top: 180px;
+    left: 250px;
+}
+
+.footer_pages_menu{
+    position: relative;
+    top: 230px;
+    left: 157px;
+}
+
+.footer_pages_review{
+    position: relative;
+    top: 280px;
+    left: 99px;
+}
+
+.footer_pages_contact{
+    position: relative;
+    top: 330px;
+    left: 25px
+}
+
+.footer_social_media{
+    position: relative;
+    top: 450px;
+    left: 530px;
+}
+
+.footer_facebook{
+    position: relative;
+    left: 120px;
+    bottom: 340px;
+}
+
+.footer_instagram{
+    position: relative;
+    left: 18px;
+    bottom: 285px;
+}
+
+.footer_twitter{
+    position: relative;
+    bottom: 240px;
+    right: 47px;
+}
+
+.footer_linkedin{
+    position: relative;
+    bottom: 190px;
+    right: 98px;
+}
+
+.contact_h2{
+    font-size: 50px;
+    position: relative;
+    left: 950px;
+    bottom: 70px;
+}
+
+
+.contact_contact{
+    position: relative;
+    left: 1000px;
+    bottom: 70px;
+    font-size: 20px;
+}
+
+.booking_request_h6{
+    position: relative;
+    right: 10px;
+    color: #E66A00;
+}
+
+.booking_request_h5, .location_h5, .lunch_time_h5, .dinner_time_h5{
+    font-size: 18px;
+}
+
+.dinner_time_h6_first_part{
+    position: relative;
+    bottom: 10px;
+}
+
+.dinner_time_h6_last_part{
+    position: relative;
+    bottom: 20px;
+}
