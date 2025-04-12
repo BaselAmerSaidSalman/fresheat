@@ -1,0 +1,1663 @@
+body{
+    background-color: #111111;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-image: url("../Images/24259_3-2_1920-1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .header_h1_1, .header_h1_2{
+        display: none;
+    }
+    .header_h1{
+        color: white;
+        width: 90%;
+        position: absolute;
+        top: 17%;
+        left: 5%;
+        z-index: 2;
+        font-size: 50px;
+    }
+    .header_h3{
+        position: absolute;
+        top: 43%;
+        left: 5%;
+        color: white;
+        z-index: 2;
+        width: 90%;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .nav_icons{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        top: 2.8%;
+        left: 11%;
+        color: white;
+        z-index: 2;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .logo img{
+        position: absolute;
+        top: -17%;
+        left: -43%;
+    }
+    .dropbtn{
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        z-index: 2;
+        padding: 5px 15px;
+        border-radius: 30px;
+        font-size: 20px;
+        background-color: transparent;
+        color: #8c8c8c;
+        border: #8c8c8c 1px solid;
+        cursor: pointer;
+    }
+    .nav_bar_list_content.show {
+        display: flex;
+    }
+    .dropbtn:hover{
+        background-color: #8c8c8c;
+        color: white;
+    }
+    .nav_bar_list_home, .nav_bar_list_about, .nav_bar_list_menu, .nav_bar_list_booking{
+        text-decoration: none;
+        color: #8c8c8c;
+        display: block;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+    .nav_bar_list_contact_us{
+        color: #8c8c8c;
+        text-decoration: none;
+        font-size: 20px;
+        position: absolute;
+        top: 37.2%;
+        z-index: 2;
+    }
+    .nav_bar_list_home:hover, .nav_bar_list_about:hover, .nav_bar_list_menu:hover, .nav_bar_list_booking:hover, .nav_bar_list_contact_us:hover{
+        color: white;
+    }
+    .nav_bar_list_home{
+        position: absolute;
+        z-index: 3;
+    }
+    .nav_bar_list_about{
+        position: absolute;
+        top: 15%;
+        z-index: 3;
+    }
+    .nav_bar_list_menu{
+        position: absolute;
+        top: 22.5%;
+        z-index: 3;
+    }
+    .nav_bar_list_booking{
+        position: absolute;
+        top: 29.7%;
+        z-index: 3;
+    }
+    .nav_bar_list_content{
+        width: 100vw;
+        z-index: 3;
+        height: 50vh;
+        background-color: black;
+        padding: 10%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: 8.4vh;
+    }
+    .header_btn, .story_btn, .special_dish_btn, .special_selectors_btn, .reserve_btn{
+        background-color: transparent;
+        color: #E66A00;
+        border: 1px solid #E66A00;
+        padding: 10px 30px;
+        font-size: 25px;
+        border-radius: 20px;
+        width: fit-content;
+        text-decoration: none;
+    }
+    
+    .header_btn:hover, .story_btn:hover, .special_dish_btn:hover, .special_selectors_btn:hover, .reserve_btn:hover{
+        background-color: #E66A00;
+        color: black;
+        transform: scale(1.05);
+    }
+    .header_btn{
+        position: absolute;
+        left: 23%;
+        top: 52%;
+        z-index: 2;
+    }
+
+    .homepage_breakfast_image, .homepage_lunch_image, .homepage_dinner_image{
+        width: 100%;
+        height: 100vh;
+    }
+    .homepage_breakfast_h3, .homepage_lunch_h3, .homepage_dinner_h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 0vh;
+    }
+    .homepage_breakfast_link, .homepage_lunch_link, .homepage_dinner_link{
+        text-decoration: none;
+        color: #E66A00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .homepage_dinner_link{
+        margin-bottom: 120px;
+    }
+    .homepage_breakfast_link_line, .homepage_lunch_link_line, .homepage_dinner_link_line{
+        display: none;
+    }
+    .breakfast_lunch_dinner_p_1, .breakfast_lunch_dinner_p_2, .breakfast_lunch_dinner_p_3, .breakfast_lunch_dinner_p_4{
+        display: none;
+    }
+
+    .story_h3_1, .story_h3_2{
+        display: none;
+    }
+    .story_p_1, .story_p_2, .story_p_3, .story_p_4, .story_p_5{
+        display: none;
+    }
+
+    .story{
+        height: 1230px;
+    }
+    .story_image{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 533%;
+        left: 0%;
+
+    }
+    .story_h5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 635%;
+        left: 39%;
+    }
+    .story_h3{
+        font-size: 30px;
+        position: absolute;
+        top: 640%;
+    }
+    .story_p{
+        font-size: 15px;
+        position: absolute;
+        top: 665%;
+    }
+    .story_h6{
+        position: absolute;
+        top: 683%;
+        left: 33%;
+    }
+    .story_phone_number{
+        position: absolute;
+        top: 690%;
+        left: 15.8%;
+        text-decoration: none;
+        font-size: 25px;
+        color: #E66A00;
+        width: fit-content;
+    }
+    .special_dish{
+        height: 900px;
+    }
+    .special_dish_image{
+        width: 100%;
+        height: 70vh;
+    }
+    .special_dish_h6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special_dish_h3{
+        font-size: 29px;
+        position: absolute;
+        top: 784%;
+    }
+    .special_dish_p_1, .special_dish_p_2, .special_dish_p_3{
+        display: none;
+    }
+    .special_dish_p{
+        position: absolute;
+        top: 793%;
+    }
+    del{
+        position: absolute;
+        top: 810%;
+    }
+    .special_dish_price{
+        position: absolute;
+        top: 804.4%;
+        left: 25%;
+        font-size: 25px;
+        color: #E66A00;
+        width: fit-content;
+    }
+    .special_dish_btn{
+        position: absolute;
+        top: 817%;
+        left: 0%;
+        width: 77vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .special_selectors{
+        height: 1200px;
+    }
+    .special_selectors_pre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special_selectors_h2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .special_selectors_1_image, .special_selectors_2_image, .special_selectors_3_image, .special_selectors_4_image, .special_selectors_5_image, .special_selectors_6_image{
+        width: 25%;
+        height: 13vh;
+        border-radius: 20px;
+    }
+    .special_selectors_1_p_1, .special_selectors_1_p_2, .special_selectors_2_p_1, .special_selectors_2_p_2, .special_selectors_3_p_1, .special_selectors_3_p_2, .special_selectors_4_p_1, .special_selectors_4_p_2, .special_selectors_5_p_1, .special_selectors_5_p_2, .special_selectors_6_p_1, .special_selectors_6_p_2, .special_selectors_1_h5, .special_selectors_4_h5, .special_selectors_5_h5{
+        display: none;
+    }
+    .special_selectors_1_h4 {
+        font-size: 20px;
+        position: absolute;
+        top: 852.5%;
+        left: 29%;
+    }
+    .special_selectors_1_p{
+        font-size: 12px;
+        position: absolute;
+        top: 858.3%;
+        left: 29%;
+    }
+    .special_selectors_1_price{
+        position: absolute;
+        top: 861.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_2_image{
+        position: absolute;
+        top: 875%;
+    }
+    .special_selectors_2_h4 {
+        font-size: 20px;
+        position: absolute;
+        top: 871.5%;
+        left: 29%;
+    }
+    .special_selectors_2_p{
+        font-size: 12px;
+        position: absolute;
+        top: 877.3%;
+        left: 29%;
+    }
+    .special_selectors_2_price{
+        position: absolute;
+        top: 880.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_3_image{
+        position: absolute;
+        top: 894%;
+    }
+    .special_selectors_3_h4 {
+        font-size: 17px;
+        position: absolute;
+        top: 891.5%;
+        left: 29%;
+    }
+    .special_selectors_3_p{
+        font-size: 12px;
+        position: absolute;
+        top: 896.3%;
+        left: 29%;
+    }
+    .special_selectors_3_price{
+        position: absolute;
+        top: 899.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_4_image{
+        position: absolute;
+        top: 913%;
+    }
+    .special_selectors_4_h4 {
+        font-size: 20px;
+        position: absolute;
+        top: 909.5%;
+        left: 29%;
+    }
+    .special_selectors_4_p{
+        font-size: 12px;
+        position: absolute;
+        top: 915.3%;
+        left: 29%;
+    }
+    .special_selectors_4_price{
+        position: absolute;
+        top: 918.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_5_image{
+        position: absolute;
+        top: 932%;
+    }
+    .special_selectors_5_h4 {
+        font-size: 20px;
+        position: absolute;
+        top: 928.5%;
+        left: 29%;
+    }
+    .special_selectors_5_p{
+        font-size: 12px;
+        position: absolute;
+        top: 934.3%;
+        left: 29%;
+    }
+    .special_selectors_5_price{
+        position: absolute;
+        top: 937.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_6_image{
+        position: absolute;
+        top: 951%;
+    }
+    .special_selectors_6_h4 {
+        font-size: 20px;
+        position: absolute;
+        top: 947.5%;
+        left: 29%;
+    }
+    .special_selectors_6_p{
+        font-size: 12px;
+        position: absolute;
+        top: 953.3%;
+        left: 29%;
+    }
+    .special_selectors_6_price{
+        position: absolute;
+        top: 956.4%;
+        left: 70%;
+        color: #E66A00;
+    }
+    .special_selectors_h5{
+        position: absolute;
+        top: 970%;
+        left: 5%;
+    }
+    .special_selectors_btn{
+        position: absolute;
+        top: 978%;
+        width: 79%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customers_reviews{
+        height: 780px;
+    }
+    .customers_reviews_1_p_1, .customers_reviews_1_p_2, .customers_reviews_1_p_3, .customers_reviews_2_p_1, .customers_reviews_2_p_2, .customers_reviews_2_p_3, .customers_reviews_3_p_1, .customers_reviews_3_p_2, .customers_reviews_3_p_3{
+        display: none;
+    }
+    .customers_reviews_1_person_image, .customers_reviews_2_person_image, .customers_reviews_3_person_image{
+        width: 25%;
+    }
+    .customers_reviews_1_person_h5{
+        font-size: 25px;
+        position: absolute;
+        top: 1018.5%;
+        left: 28%;
+    }
+    .customers_reviews_1_person_h6{
+        position: absolute;
+        top: 1025.2%;
+        left: 29%;
+    }
+    .customers_reviews_1_person_stars{
+        color: yellow;
+        position: absolute;
+        top: 1028%;
+        left: 28.3%;
+    }
+    .customers_reviews_2_p{
+        position: absolute;
+        top: 1040%;
+    }
+    .customers_reviews_2_person_image{
+        position: absolute;
+        top: 1051%;
+    }
+
+    .customers_reviews_2_person_h5{
+        font-size: 25px;
+        position: absolute;
+        top: 1047%;
+        left: 28%;
+    }
+    .customers_reviews_2_person_h6{
+        position: absolute;
+        top: 1053.7%;
+        left: 29%;
+    }
+    .customers_reviews_2_person_stars{
+        color: yellow;
+        position: absolute;
+        top: 1056.5%;
+        left: 28.3%;
+    }
+    .customers_reviews_3_p{
+        position: absolute;
+        top: 1072%;
+    }
+    .customers_reviews_3_person_image{
+        position: absolute;
+        top: 1083%;
+    }
+    .customers_reviews_3_person_h5{
+        font-size: 25px;
+        position: absolute;
+        top: 1079%;
+        left: 28%;
+    }
+    .customers_reviews_3_person_h6{
+        position: absolute;
+        top: 1085.7%;
+        left: 29%;
+    }
+    .customers_reviews_3_person_stars{
+        color: yellow;
+        position: absolute;
+        top: 1088.5%;
+        left: 28.3%;
+    }
+
+    .reserve{
+        height: 800px;
+    }
+    .reserve_h2{
+        font-size: 39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reserve_h6{
+        position: absolute;
+        top: 1133%;
+        left: 3.5%;
+    }
+    .reserve_phone_number_span{
+        font-size: 20px;
+        color: #E66A00;
+    }
+    .user_name{
+        font-size: 20px;
+        width: 97%;
+        height: 6vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1144%;
+        left: 0%;
+    }
+    .user_phone_number{
+        font-size: 20px;
+        width: 97%;
+        height: 6vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1151.5%;
+        left: 0%;
+    }
+    .reserve_time{
+        font-size: 20px;
+        width: 48%;
+        height: 6vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1159%;
+        left: 0%;
+    }
+    .reserve_date{
+        font-size: 20px;
+        width: 48%;
+        height: 6vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1159%;
+        left: 50%;
+    }
+    .person_numbers_list{
+        font-size: 20px;
+        width: 98%;
+        height: 6vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1166.5%;
+        left: 0%;
+    }
+    textarea{
+        font-size: 20px;
+        width: 97%;
+        height: 35vh;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 1174%;
+        left: 0%;
+    }
+    .reserve_btn{
+        position: absolute;
+        top: 1213%;
+        width: 95vw;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_pages_home, .footer_pages_about, .footer_pages_menu, .footer_pages_booking, .footer_facebook, .footer_instagram, .footer_twitter, .footer_linkedin{
+        text-decoration: none;
+        color: #E66A00;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (min-width: 769px) {
+    .header_homepage, .header_about_us, .header_menu, .header_booking ,.header_contact_us{
+        text-decoration: none;
+        position: relative;
+        left: 570px;
+        margin-right: 20px;
+        color: white;
+        z-index: 2;
+        width: fit-content;
+    }
+    
+    .header_h1{
+        display: none;
+    }
+
+    .header_h1_1, .header_h1_2{
+        position: absolute;
+        top: 330px;
+        left: 400px;
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 2;
+        width: fit-content;
+    }
+    
+    .header_h1_2{
+        top: 400px;
+        width: fit-content;
+    }
+    
+    .search_icon, .cart_icon, .logo, .header_h3{
+        position: relative;
+        color: white;
+        z-index: 2;
+        width: fit-content;
+    }
+    
+    .header_h3{
+        position: relative;
+        top: 490px;
+        left: 530px;
+        width: fit-content;
+    }
+    
+    .logo{
+        text-decoration: none;
+    }
+    
+    .header_btn, .story_btn, .special_dish_btn, .special_selectors_btn, .reserve_btn{
+        background-color: transparent;
+        color: #E66A00;
+        border: 1px solid #E66A00;
+        padding: 10px 30px;
+        font-size: 25px;
+        border-radius: 20px;
+        width: fit-content;
+    }
+    
+    .header_btn:hover, .story_btn:hover, .special_dish_btn:hover, .special_selectors_btn:hover, .reserve_btn:hover{
+        background-color: #E66A00;
+        color: black;
+        transform: scale(1.05);
+    }
+    
+    .dropbtn{
+        display: none;
+    }
+
+    .header_btn{
+        position: relative;
+        top: 500px;
+        left: 650px;
+        z-index: 2;
+        text-decoration: none;
+        width: fit-content;
+    }
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    .homepage_breakfast_image, .homepage_lunch_image, .homepage_dinner_image{
+        width: 400px;
+        height: 600px;
+    }
+    
+    .homepage_breakfast_h3, .homepage_lunch_h3, .homepage_dinner_h3{
+        font-size: 30px;
+        width: fit-content;
+    }
+    
+    .homepage_breakfast_link, .homepage_lunch_link, .homepage_dinner_link{
+        text-decoration: none;
+        color: #E66A00;
+    }
+    
+    .homepage_breakfast_image{
+        position: relative;
+        top: 90px;
+        left: 50px;
+        border-radius: 10px;
+    }
+    
+    .homepage_breakfast_h3{
+        position: relative;
+        top: 90px;
+        left: 175px;
+        width: fit-content;
+    }
+    
+    .homepage_breakfast_link{
+        position: relative;
+        top: 85px;
+        left: 200px;
+    }
+    
+    .homepage_breakfast_link_line{
+        position: relative;
+        width: 75px;
+        right: 706px;
+        opacity: 0;
+        transition: ease-in-out 0.2 opacity;
+    }
+    
+    .homepage_breakfast_link:hover .homepage_breakfast_link_line, .homepage_lunch_link:hover .homepage_lunch_link_line, .homepage_dinner_link:hover .homepage_dinner_link_line{
+        opacity: 1;
+        width: fit-content;
+    }
+    
+    .homepage_breakfast_link:hover, .homepage_lunch_link:hover, .homepage_dinner_link:hover{
+        filter: brightness(2.5);
+    }
+    
+    .breakfast_lunch_dinner_h1{
+        position: relative;
+        top: 150px;
+        left: 500px;
+        font-size: 60px;
+        width: fit-content;
+    }
+
+    .breakfast_lunch_dinner_p{
+        display: none;
+    }
+    
+    .breakfast_lunch_dinner_p_1{
+        position: relative;
+        top: 150px;
+        left: 525px;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .breakfast_lunch_dinner_p_2{
+        position: relative;
+        top: 150px;
+        left: 560px;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .breakfast_lunch_dinner_p_3{
+        position: relative;
+        top: 150px;
+        left: 600px;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .breakfast_lunch_dinner_p_4{
+        position: relative;
+        top: 150px;
+        left: 680px;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .homepage_lunch_image{
+        position: relative;
+        bottom: 500px;
+        left: 555px;
+        border-radius: 10px;
+    }
+    
+    .homepage_lunch_h3{
+        position: relative;
+        bottom: 490px;
+        left: 715px;
+        width: fit-content;
+    }
+    
+    .homepage_lunch_link{
+        position: relative;
+        bottom: 490px;
+        left: 713px;
+        width: fit-content;
+    }
+    
+    .homepage_lunch_link_line{
+        opacity: 0;
+        width: 75px;
+        position: relative;
+        right: 705px;
+    }
+    
+    .homepage_dinner_image{
+        position: relative;
+        bottom: 1375px;
+        left: 1050px;
+        border-radius: 10px;
+    }
+    
+    .homepage_dinner_h3{
+        position: relative;
+        bottom: 1355px;
+        left: 1210px;
+        width: fit-content;
+    }
+    
+    .homepage_dinner_link{
+        position: relative;
+        bottom: 1350px;
+        left: 1210px;
+        width: fit-content;
+    }
+    
+    .homepage_dinner_link_line{
+        opacity: 0;
+        width: 75px;
+        position: relative;
+        right: 706px;
+    }
+    
+    .breakfast_lunch_dinner{
+        height: 1450px;
+    }
+    
+    
+    .story{
+        background-color: #1a1a1a;
+        height: 1200px;
+    }
+    
+    .story_image{
+        width: 600px;
+        height: 800px;
+        position: relative;
+        left: 470px;
+        top: -220px;
+    }
+    
+    .story_h5{
+        position: relative;
+        top: 220px;
+        left: 400px;
+        width: fit-content;
+    }
+    
+    .story_h3{
+        display: none;
+    }
+
+    .story_h3_1{
+        position: relative;
+        top: 250px;
+        left: 150px;
+        font-size: 30px;
+        width: fit-content;
+    }
+    
+    .story_h3_2{
+        position: relative;
+        top: 250px;
+        left: 180px;
+        font-size: 30px;
+        width: fit-content;
+    }
+    
+    .story_p{
+        display: none;
+    }
+    .story_p_1, .story_p_2, .story_p_3, .story_p_4, .story_p_5{
+        width: fit-content;
+        position: relative;
+        top: 350px;
+        left: 180px;
+        transform: scale(1.5);
+        margin-bottom: 25px;
+    }
+    
+    .story_p_2{
+        position: relative;
+        left: 180px;
+        width: fit-content;
+    }
+    
+    .story_p_3{
+        position: relative;
+        left: 182px;
+        width: fit-content;
+    }
+    
+    .story_p_4{
+        position: relative;
+        left: 185px;
+        width: fit-content;
+    }
+    
+    .story_p_5{
+        position: relative;
+        left: 190px;
+        width: fit-content;
+    }
+    
+    .story_h6{
+        position: relative;
+        top: 450px;
+        left: 340px;
+        transform: scale(5);
+        width: fit-content;
+    }
+    
+    .story_phone_number{
+        position: relative;
+        bottom: 330px;
+        left: 290px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #E66A00;
+        width: fit-content;
+    }
+    
+    .story_btn{
+        text-decoration: none;
+        position: relative;
+        bottom: 200px;
+        left: 100px;
+    }
+    
+    .special_dish{
+        height: 880px;
+    }
+    
+    .special_dish_image{
+        position: relative;
+        top: 50px;
+        width: 700px;
+        height: 800px;
+    }
+    
+    
+    .special_dish_h6{
+        position: relative;
+        bottom: 680px;
+        left: 1050px;
+        font-size: 15px;
+        width: fit-content;
+    }
+    
+    .special_dish_h3{
+        position: relative;
+        bottom: 650px;
+        left: 840px;
+        font-size: 50px;
+        width: fit-content;
+    }
+    
+    .special_dish_p{
+        display: none;
+    }
+
+    .special_dish_p_1{
+        position: relative;
+        bottom: 620px;
+        left: 850px;
+        font-size: 22px;
+        width: fit-content;
+    }
+    
+    .special_dish_p_2{
+        position: relative;
+        bottom: 620px;
+        left: 895px;
+        font-size: 22px;
+        width: fit-content;
+    }
+    
+    .special_dish_p_3{
+        position: relative;
+        bottom: 620px;
+        left: 880px;
+        font-size: 22px;
+        width: fit-content;
+    }
+    
+    del{
+        position: relative;
+        bottom: 590px;
+        left: 950px;
+        width: fit-content;
+    }
+    
+    .special_dish_price{
+        position: relative;
+        bottom: 645px;
+        left: 1050px;
+        font-size: 25px;
+        color: #E66A00;
+        width: fit-content;
+    }
+    
+    .special_dish_btn{
+        position: relative;
+        bottom: 590px;
+        left: 970px;
+        text-decoration: none;
+        width: fit-content;
+    }
+    
+    .special_selectors{
+        background-color: #1a1a1a;
+        height: 2700px;
+    }
+    
+    .special_selectors_1_image, .special_selectors_2_image, .special_selectors_3_image, .special_selectors_4_image, .special_selectors_5_image, .special_selectors_6_image{
+        width: 215px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .special_selectors_1_p, .special_selectors_2_p, .special_selectors_3_p, .special_selectors_4_p, .special_selectors_5_p, .special_selectors_6_p{
+        display: none;
+    }
+    
+    .special_selectors_pre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50px;
+        width: fit-content;
+    }
+    
+    .special_selectors_h2{
+        position: relative;
+        top: 50px;
+        left: 510px;
+        font-size: 70px;
+        width: fit-content;
+    }
+    
+    .special_selectors_1_image{
+        position: relative;
+        top: 100px;
+        left: 50px
+    }
+    
+    .special_selectors_1_h4{
+        position: relative;
+        left: 290px;
+        bottom: 110px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_1_p_1, .special_selectors_1_p_2{
+        position: relative;
+        left: 300px;
+        bottom: 120px;
+        width: fit-content;
+    }
+    
+    .special_selectors_1_price{
+        position: relative;
+        bottom: 237px;
+        left: 950px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_1_h5{
+        position: relative;
+        bottom: 282px;
+        left: 580px;
+        background-color: #E66A00;
+        color: black;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .special_selectors_2_image{
+        position: relative;
+        bottom: 20px;
+        left: 50px;
+    }
+    
+    .special_selectors_2_h4{
+        position: relative;
+        bottom: 227px;
+        left: 290px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_2_p_1, .special_selectors_2_p_2{
+        position: relative;
+        bottom: 235px;
+        left: 300px;
+        width: fit-content;
+    }
+    
+    .special_selectors_2_price{
+        position: relative;
+        bottom: 353px;
+        left: 950px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_3_image{
+        position: relative;
+        bottom: 90px;
+        left: 50px
+    }
+    
+    .special_selectors_3_h4{
+        position: relative;
+        bottom: 295px;
+        left: 290px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_3_p_1, .special_selectors_3_p_2{
+        position: relative;
+        bottom: 300px;
+        left: 300px;
+        width: fit-content;
+    }
+    
+    .special_selectors_3_price{
+        position: relative;
+        bottom: 420px;
+        left: 960px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_4_image{
+        position: relative;
+        bottom: 130px;
+        left: 50px;
+    }
+    
+    .special_selectors_4_h4{
+        position: relative;
+        bottom: 332px;
+        left: 290px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_4_p_1, .special_selectors_4_p_2{
+        position: relative;
+        bottom: 335px;
+        left: 300px;
+        width: fit-content;
+    }
+    
+    .special_selectors_4_price{
+        position: relative;
+        bottom: 457px;
+        left: 970px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_4_h5{
+        position: relative;
+        bottom: 502px;
+        left: 495px;
+        background-color: #E66A00;
+        color: black;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .special_selectors_5_image{
+        position: relative;
+        bottom: 230px;
+        left: 50px;
+    }
+    
+    .special_selectors_5_h4{
+        position: relative;
+        bottom: 430px;
+        left: 290px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_5_p_1, .special_selectors_5_p_2{
+        position: relative;
+        bottom: 437px;
+        left: 300px;
+        width: fit-content;
+    }
+    
+    .special_selectors_5_price{
+        position: relative;
+        bottom: 556px;
+        left: 900px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_5_h5{
+        position: relative;
+        bottom: 600px;
+        left: 480px;
+        background-color: #E66A00;
+        color: black;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .special_selectors_6_image{
+        position: relative;
+        bottom: 320px;
+        left: 50px;
+    }
+    
+    .special_selectors_6_h4{
+        position: relative;
+        bottom: 520px;
+        left: 295px;
+        font-size: 25px;
+        width: fit-content;
+    }
+    
+    .special_selectors_6_p_1, .special_selectors_6_p_2{
+        position: relative;
+        bottom: 525px;
+        left: 305px;
+        width: fit-content;
+    }
+    
+    .special_selectors_6_price{
+        position: relative;
+        bottom: 645px;
+        left: 800px;
+        color: #E66A00;
+        transform: scale(1.3);
+        width: fit-content;
+    }
+    
+    .special_selectors_h5{
+        position: relative;
+        bottom: 450px;
+        left: 320px;
+        font-size: 40px;
+        width: fit-content;
+    }
+    
+    .special_selectors_btn{
+        text-decoration: none;
+        position: relative;
+        bottom: 450px;
+        left: 620px;
+    }
+    
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+    
+    .customers_reviews_1_p, .customers_reviews_2_p, .customers_reviews_3_p{
+        display: none;
+    }
+
+    .customers_reviews_1_person_image, .customers_reviews_2_person_image, .customers_reviews_3_person_image{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .customers_reviews_1_person_image{
+        position: relative;
+        top: 250px;
+        left: 100px;
+    }
+    
+    .customers_reviews_1_person_h5{
+        position: relative;
+        left: 190px;
+        top: 152px;
+        font-size: 18px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_1_person_h6{
+        position: relative;
+        left: 190px;
+        bottom: -127px;
+        font-size: 9px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_1_person_stars{
+        position: relative;
+        bottom: -108px;
+        left: 186px;
+        color: yellow;
+        width: fit-content;
+    }
+    
+    .customers_reviews_1_p_1, .customers_reviews_1_p_2, .customers_reviews_1_p_3{
+        position: relative;
+        left: 110px;
+        top: 240px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_2_person_image{
+        position: relative;
+        left: 600px;
+        bottom: 65px;
+    }
+    
+    .customers_reviews_2_person_h5{
+        font-size: 18px;
+        position: relative;
+        left: 692px;
+        bottom: 162px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_2_person_h6{
+        position: relative;
+        left: 695px;
+        bottom: 187px;
+        font-size: 9px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_2_person_stars{
+        position: relative;
+        bottom: 207px;
+        left: 692px;
+        color: yellow;
+        width: fit-content;
+    }
+    
+    .customers_reviews_2_p_1, .customers_reviews_2_p_2, .customers_reviews_2_p_3{
+        position: relative;
+        left: 600px;
+        bottom: 80px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_3_person_image{
+        position: relative;
+        left: 1100px;
+        bottom: 385px;
+    }
+    
+    .customers_reviews_3_person_h5{
+        font-size: 18px;
+        position: relative;
+        bottom: 478px;
+        left: 1192px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_3_person_h6{
+        font-size: 9px;
+        position: relative;
+        bottom: 505px;
+        width: fit-content;
+        left: 1195px;
+    }
+    
+    .customers_reviews_3_person_stars{
+        color: yellow;
+        position: relative;
+        bottom: 525px;
+        left: 1193px;
+        width: fit-content;
+    }
+    
+    .customers_reviews_3_p_1, .customers_reviews_3_p_2, .customers_reviews_3_p_3{
+        position: relative;
+        bottom: 400px;
+        left: 1105px;
+        width: fit-content;
+    }
+    
+    .customers_reviews{
+        height: 700px;
+    }
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+    .reserve{
+        background-color: #1a1a1a;
+        height: 1050px;
+    }
+    
+    .reserve_h2{
+        font-size: 60px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+    }
+    
+    .reserve_phone_number_span{
+        color: #E66A00;
+    }
+    
+    .reserve_h6{
+        font-size: 15px;
+        position: relative;
+        top: 70px;
+        left: 560px;
+        width: fit-content;
+    }
+    
+    .user_name{
+        font-size: 20px;
+        width: 400px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 120px;
+        left: 320px;
+    }
+    
+    .user_phone_number{
+        font-size: 20px;
+        width: 400px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 120px;
+        left: 340px;
+    }
+    
+    .person_numbers_list{
+        font-size: 20px;
+        width: 250px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 200px;
+        right: 495px;
+    }
+    
+    option{
+        color: black;
+    }
+    
+    .reserve_date{
+        font-size: 20px;
+        width: 250px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 200px;
+        right: 470px;
+    }
+    
+    .reserve_time{
+        font-size: 20px;
+        width: 250px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        bottom: 123px;
+        left: 890px;
+    }
+    
+    textarea{
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        width: 800px;
+        height: 300px;
+        position: relative;
+        top: 240px;
+        left: 73px;
+    }
+    
+    .reserve_btn{
+        position: relative;
+        top: 340px;
+        right: 420px;
+    }
+    
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+    
+    footer{
+        height: 700px;
+    }
+    
+    .footer_h1{
+        font-size: 50px;
+        position: relative;
+        top: 100px;
+        left: 250px;
+        width: fit-content;
+    }
+    
+    .footer_pages_home, .footer_pages_about, .footer_pages_menu, .footer_pages_booking, .footer_facebook, .footer_instagram, .footer_twitter, .footer_linkedin{
+        text-decoration: none;
+        color: #E66A00;
+        font-size: 20px;
+        width: fit-content;
+    }
+    
+    .footer_pages_home:hover, .footer_pages_about:hover, .footer_pages_menu:hover, .footer_pages_booking:hover, .footer_facebook:hover, .footer_instagram:hover, .footer_twitter:hover, .footer_linkedin:hover{
+        filter: brightness(2.5);
+    }
+    
+    .footer_pages_home{
+        position: relative;
+        top: 130px;
+        left: 310px;
+    }
+    
+    .footer_pages_about{
+        position: relative;
+        top: 180px;
+        left: 250px;
+    }
+    
+    .footer_pages_menu{
+        position: relative;
+        top: 230px;
+        left: 157px;
+    }
+    
+    .footer_pages_booking{
+        position: relative;
+        top: 280px;
+        left: 99px;
+    }
+    
+    
+    .footer_social_media{
+        position: relative;
+        top: 450px;
+        left: 530px;
+    }
+    
+    .footer_facebook{
+        position: relative;
+        left: 120px;
+        bottom: 340px;
+        width: fit-content;
+    }
+    
+    .footer_instagram{
+        position: relative;
+        left: 18px;
+        bottom: 285px;
+        width: fit-content;
+    }
+    
+    .footer_twitter{
+        position: relative;
+        bottom: 240px;
+        right: 47px;
+        width: fit-content;
+    }
+    
+    .footer_linkedin{
+        position: relative;
+        bottom: 190px;
+        right: 98px;
+        width: fit-content;
+    }
+    
+    .contact_h2{
+        font-size: 50px;
+        position: relative;
+        left: 950px;
+        width: fit-content;
+        bottom: 70px;
+    }
+    
+    
+    .contact_contact{
+        position: relative;
+        left: 1000px;
+        width: fit-content;
+        bottom: 70px;
+        font-size: 20px;
+    }
+    
+    .booking_request_h6{
+        position: relative;
+        right: 10px;
+        color: #E66A00;
+        width: fit-content;
+    }
+    
+    .booking_request_h5, .location_h5, .lunch_time_h5, .dinner_time_h5{
+        font-size: 18px;
+        width: fit-content;
+    }
+    
+    .dinner_time_h6_first_part{
+        position: relative;
+        bottom: 10px;
+        width: fit-content;
+    }
+    
+    .dinner_time_h6_last_part{
+        position: relative;
+        bottom: 20px;
+        width: fit-content;
+    }
+}

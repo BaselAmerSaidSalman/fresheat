@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="owner" content="Basel"/>
+        <link rel="stylesheet" href="CSS/index.css"/>
+        <link rel="stylesheet" href="boxicons.min.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link rel="stylesheet" href="CSS/index.css"/>
+        <title>HomePage</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo" data-aos="fade-up"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXhJREFUSEvt1r8vBUEQwPHva1BoVILC6/wDOpVCp9GJSKgJ/wL+BIlQSkhQ6URUKn+AVkXhRynRSBTcJLOy1t7bnXVyzbvm3rvs3Gdmbm/e69DS0WnJpRSWuCVN+gT4tBZQAkuMYIuKnWkSJtwKh6gr1IxbYFl7BCyr9qDnST0fAyu5bc+Fw0ofgRkFb4AJa9tz4DrUr9iMp+AU6p6xtNuE94Jz0SK8DraiZjwGl6ImPIT/imbjPhwbDjvVnbat41DXS9yWF/tjyPiwDAYZAv7RJCz3lfl+Kh98eAE4/2d4HrgIYfk+BYwB15qAX/EAsFG9r3PAUJDgO3AF7AEfkVbPAk9VxXcuru51cr80PnwIrCae9z6wHoF/ORb4DRgGZFTeBwl0AZler8BI03CsC873d7ArJnbtO19LxX3Yf8z9Vks3ijbXCzBaOKPDsGdgPLxYt6s3q/dxtyF4rSriIBeWddM6HgcLE5AxegncxuJT/7kKzXRYa/AXg/aCH31NgGkAAAAASUVORK5CYII="/> FreshEat </a>
+            <div class="nav_bar">
+                <a href="index.html" class="header_homepage">HOME</a>
+                <a href="#about" class="header_about_us">ABOUT</a>
+                <a href="#menu" class="header_menu">MENU</a>
+                <a href="#booking" class="header_booking">BOOKING</a>
+                <a href="#contact" class="header_contact_us">CONTACT</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" data-aos="fade-up">&#9776;</button>
+                <div class="nav_bar_list_content">
+                    <a href="index.html" data-aos="fade-up" class="nav_bar_list_home">HOME</a>
+                    <a href="#about" data-aos="fade-up" class="nav_bar_list_about">ABOUT</a>
+                    <a href="#menu" data-aos="fade-up" class="nav_bar_list_menu">MENU</a>
+                    <a href="#booking" data-aos="fade-up" class="nav_bar_list_booking">BOOKING</a>
+                    <a href="#contact" data-aos="fade-up" class="nav_bar_list_contact_us">CONTACT</a>
+                </div>
+            </div>
+            <!-- <div class="nav_icons">
+                <a href="#"><img class="search_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoZJREFUSEvllknIjlEUx39fxiwsbAyfKZEhURbfAgspJGxkKoVMoS8lEdlYsUCGIsocKbJgIWxYUTYoylQkUyKFMg/nr/PoerzPc+/71OtbOLv3fc49v3vPPed/bhNtZE1txCUV3BFoAQYBPYDnwAPgGvC5yuZj4H7AVmAq0LkG4ANwBlgDPKlnA2XgFcB2QKeN2SdgGXA45ph9LwLrlKvd6auldy9wCbgLPAQGAEOA8cBSoJ37brCNbkqB1wIvB/b4Yt3jFOBeSbARdv/ngGb3mQ2cjMHz4KHATaCDn24s8CoWBOgNXAH6AO+BwZaJZ2Xr8uALFmCiV6oWP0qAZi4jgevwq1OO2pXMTwV3A1678w5gVR3QzPUEMAd4Cyjet6IY4YlnAKfccTRwtQJ4ZnC/pTFC8Epgp8O6WlW/qwDu71WvpQuAIyknXh+0QvuyNJVsqBPw0b+vBbakgNWP+9yxpwnCiwon7gU89XWzgqv7K1SY6gnARfeYDJyvAJ4GnPV1w4HbKSfuArxxidxvO19SAXwMmAv8cG0vHCD5Pj4NTAe+W3UOcxFJ5auPb7jzARsai1P7WH7SYKVHk0hyOQZ4mUDu68ol2ZQWaHwqe4VWS6sXmQQq1bLH1s+TTBTulMQY5Vrd3X12m8y2xjZbNJ02W1us88WaThoal4PpJDnVVYzzlObjaPMH6z1x5q8ptQtQT8fsiz8IpH6ZlcJjLxDd+TZA7SVxyJu0+JD9udH7d6FNKBVWFB4DZwEE1ZtroL+5NLXuA7cCpcp883D91ub+sFRwLNX574KpQBVfrTnPKv146NQosBghXFWuav9tjQQLIvVTT2tg/JNUR6+m0Scu3MD/B/4JVp9tH2VWMqoAAAAASUVORK5CYII="/></a>
+                <a href="#"><img class="cart_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgdJREFUSEvN1kuoTXEUx/HPlYFHpEQyIhnIxEQiEwYykMHFhJnyLAMDxUCkPAYG0i2RMnJH9w6NhIEoxUAJA4/yiGIgMvAIZ93+u3bbuef893k4Vp3B2Wf91/e/fuuxz5AB2dCAuP4L8CLEJ+wLHvRTjXLGx3GsBHuGjXjejwu0AgfvIVb0G1yWehgHEnAt7vQaPllzzcV7TMUodvwrcHCuYju+YzO+dQl/hRdFjFbjFBLf7hJWPb4V4/Gw3Rw/wvIewnfiSg54Ny4m8Clc7+ASJ7EGPzEPn3LAM/AOsxN0Q03wTHzENIxhW06NC5/zabR+Nxpuac2FUlZsE67VAS9BbLGwczhYI+u7WI0PWIBfdcDhewPr8RnzM0drcWl8zuJQ+cLturrw3ZJqFN934XJG1tGMR5LfMjztBDylAXyb5HqcMWKR0BssxP1GbVdWL5qbcZw7ihMpQMzjyxZZx+yPpN/340I34GiO12l/Zyg94fIj9cTE7HYidXHmUqpxLjiWz95mznWkjvNR66jX9Azy11TfmP+/rC44AsRSmJPqFn+RqjYL+9JqDIWaWl3waRxOkW6l2a4Gvol16eGZ0kh1VeNy0JAwpK9abKciocku1/a1WA1a3r0h454m4Gio8AuL35vKXVfqCBZbKN5W91o02Kq0Xp/0qsYZzZzn0knGeZHbeA0M/AffmVMfIK6tVQAAAABJRU5ErkJggg=="/></a>
+            </div> -->
+            <div class="header">
+                <h1 class="header_h1_1" data-aos="fade-up">Order Now & Enjoy Your</h1>
+                <h1 class="header_h1_2" data-aos="fade-up">Meal In Minutes!🍽️🚀</h1>
+                <h1 class="header_h1" data-aos="fade-up">Order Now & Enjoy Your Meal In Minutes!🍽️</h1>
+                <h3 class="header_h3" data-aos="fade-up">Come with family & feel the joy of mouthwatering food</h3>
+                <a href="#booking" class="header_btn" data-aos="fade-up">Order Now</a>
+            </div>
+        </header>
+        <div class="breakfast_lunch_dinner">
+            <h1 class="breakfast_lunch_dinner_h1" data-aos="fade-up">We Offer Top Notch</h1>
+            <p class="breakfast_lunch_dinner_p_1" data-aos="fade-up">A luxurious experience with high-quality ingredients and perfectly</p>
+            <p class="breakfast_lunch_dinner_p_2" data-aos="fade-up">balanced flavors. Each meal, from breakfast to dinner, is</p>
+            <p class="breakfast_lunch_dinner_p_3" data-aos="fade-up">crafted to delight the senses with exceptional</p>
+            <p class="breakfast_lunch_dinner_p_4" data-aos="fade-up">taste and presentation.</p>
+            <p class="breakfast_lunch_dinner_p">A luxurious experience with high-quality ingredients and perfectly balanced flavors. Each meal, from breakfast to dinner, is crafted to delight the senses with exceptional taste and presentation.</p>
+            <div class="homepage_breakfast">
+                <img src="Images/blistered-cherry-tomato-toast-fried-egg-beauty1x1-957-c2201d6dc4114fe8b0342ea96b98ff71.jpg" class="homepage_breakfast_image" data-aos="fade-up">
+                <h3 class="homepage_breakfast_h3" data-aos="fade-up">BreakFast</h3>
+                <a href="breakfast.html" class="homepage_breakfast_link" data-aos="fade-up">VIEW MENU <hr class="homepage_breakfast_link_line" data-aos="fade-up"></a>
+            </div>
+            <div class="homepage_lunch">
+                <img src="Images/9-1700998453.jpg" class="homepage_lunch_image" data-aos="fade-up">
+                <h3 class="homepage_lunch_h3" data-aos="fade-up">Lunch</h3>
+                <a href="lunch.html" class="homepage_lunch_link" data-aos="fade-up">VIEW MENU <hr class="homepage_lunch_link_line" data-aos="fade-up"></a>
+            </div>
+            <div class="homepage_dinner">
+                <img src="Images/easy-dinner-recipes-f768402675e04452b1531360736da8b5.jpg" class="homepage_dinner_image" data-aos="fade-up">
+                <h3 class="homepage_dinner_h3" data-aos="fade-up">Dinner</h3>
+                <a href="dinner.html" class="homepage_dinner_link" data-aos="fade-up">VIEW MENU <hr class="homepage_dinner_link_line" data-aos="fade-up"></a>
+            </div>
+        </div>
+
+        <div class="story" id="about">
+            <h5 class="story_h5" data-aos="fade-up">Our Story</h5>
+            <h3 class="story_h3_1" data-aos="fade-up">A journey that started with a dream and turned</h3>
+            <h3 class="story_h3_2" data-aos="fade-up">into a reality full of delicious flavors!✨🍽️</h3>
+            <h3 class="story_h3" data-aos="fade-up">A journey that started with a dream and turned into a reality full of delicious flavors!✨🍽️</h3>
+            <p class="story_p_1" data-aos="fade-up">The journey of FreshEat began with a simple idea… to serve fresh,</p>
+            <p class="story_p_2" data-aos="fade-up">delicious, and high-quality food. We faced challenges,</p>
+            <p class="story_p_3" data-aos="fade-up">but our passion for flavors led us to success! Today,</p>
+            <p class="story_p_4" data-aos="fade-up">FreshEat is not just a restaurant—it’s a unique dining</p>
+            <p class="story_p_5" data-aos="fade-up">experience that evolves every day! 🍽️🔥</p>
+            <p class="story_p" data-aos="fade-up">The journey of FreshEat began with a simple idea… to serve fresh, delicious, and high-quality food. We faced challenges, but our passion for flavors led us to success! Today, FreshEat is not just a restaurant—it’s a unique dining experience that evolves every day! 🍽️🔥</p>
+            <h6 class="story_h6" data-aos="fade-up">Book Through Call</h6>
+            <a href="#" class="story_phone_number" data-aos="fade-up">+201554134758</a>
+            <a href="about.html" class="story_btn" data-aos="fade-up">READ MORE</a>
+            <img src="Images/atmosphere.jpg" class="story_image" data-aos="fade-up"/>
+        </div>
+
+        <div class="special_dish">
+            <img src="Images/img-20190928-193156-largejpg.jpg" class="special_dish_image" data-aos="fade-up"/>
+            <h6 class="special_dish_h6" data-aos="fade-up">Special Dish</h6>
+            <h3 class="special_dish_h3" data-aos="fade-up">Special FreshEat Burger</h3>
+            <p class="special_dish_p_1" data-aos="fade-up">Juicy grilled beef patty with melted cheese, fresh veggies,</p>
+            <p class="special_dish_p_2" data-aos="fade-up">and our secret sauce in a soft brioche bun.</p>
+            <p class="special_dish_p_3" data-aos="fade-up">Served with crispy fries and signature dips! 🍟🔥</p>
+            <p class="special_dish_p" data-aos="fade-up">Juicy grilled beef patty with melted cheese, fresh veggies, and our secret sauce in a soft brioche bun. Served with crispy fries and signature dips! 🍟🔥</p>              
+            <del data-aos="fade-up">40.00$</del>
+            <h4 class="special_dish_price" data-aos="fade-up">20.00$</h4>
+            <a href="menu.html" class="special_dish_btn" data-aos="fade-up">VIEW ALL MENU</a>
+        </div>
+
+        <div class="special_selectors" id="menu">
+            <pre class="special_selectors_pre" data-aos="fade-up">S P E C I A L  S E L E C T I O N</pre>
+            <h2 class="special_selectors_h2" data-aos="fade-up">Delicious Menu</h2>
+            <div class="special_selectors_1">
+                <img src="Images/healthy-meatballs.jpg" class="special_selectors_1_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_1_h4" data-aos="fade-up">Spaghetti With MeatBalls</h4>
+                <p class="special_selectors_1_p_1" data-aos="fade-up">Cooked spaghetti, creamy tomato sauce, seasoned and seared meatballs,</p>
+                <p class="special_selectors_1_p_2" data-aos="fade-up">grated Parmesan cheese (optional), and fresh herbs for garnish.</p>
+                <p class="special_selectors_1_p" data-aos="fade-up">Spaghetti in creamy tomato sauce with seared meatballs, topped with Parmesan and herbs.</p>
+                <h3 class="special_selectors_1_price" data-aos="fade-up">25.00$</h3>
+                <h5 class="special_selectors_1_h5" data-aos="fade-up">LIMITED</h5>
+            </div>
+            
+            <div class="special_selectors_2">
+                <img src="Images/healthy-dinner-ideas.webp" class="special_selectors_2_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_2_h4" data-aos="fade-up">Chicken with Rice</h4>
+                <p class="special_selectors_2_p_1" data-aos="fade-up">Crispy fried chicken coated in a flavorful orange sauce, served with soft white rice,</p>
+                <p class="special_selectors_2_p_2" data-aos="fade-up">and garnished with chopped green onions for a fresh touch.</p>
+                <p class="special_selectors_2_p" data-aos="fade-up">Crispy chicken in orange sauce with soft rice, topped with fresh green onions.</p>
+                <h3 class="special_selectors_2_price" data-aos="fade-up">35.00$</h3>
+            </div>
+            
+            <div class="special_selectors_3">
+                <img src="Images/Sweet-and-Sour-Tofu-7b9db79.jpg" class="special_selectors_3_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_3_h4" data-aos="fade-up">Sweet and Sour Tofu with Rice</h4>
+                <p class="special_selectors_3_p_1" data-aos="fade-up">Crispy tofu cubes stir-fried with bell peppers, pineapple chunks, and cashew nuts, coated in a tangy sweet and sour sauce,</p>
+                <p class="special_selectors_3_p_2" data-aos="fade-up">served over fluffy brown rice, and topped with sesame seeds for extra flavor.</p>
+                <p class="special_selectors_3_p" data-aos="fade-up">Tofu stir-fried with peppers, pineapple, and cashews in tangy sauce over brown rice.</p>
+                <h3 class="special_selectors_3_price" data-aos="fade-up">20.00$</h3>
+            </div>
+            
+            <div class="special_selectors_4">
+                <img src="Images/72 dpi webp-REC-283110_Pizza.webp" class="special_selectors_4_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_4_h4" data-aos="fade-up">Pepperoni Pizza</h4>
+                <p class="special_selectors_4_p_1" data-aos="fade-up">A crispy pizza crust topped with rich tomato sauce, melted mozzarella cheese, and savory pepperoni slices,</p>
+                <p class="special_selectors_4_p_2" data-aos="fade-up">baked to perfection with a sprinkle of Italian herbs for extra flavor.</p>
+                <p class="special_selectors_4_p" data-aos="fade-up">Crispy crust, rich tomato sauce, mozzarella, and pepperoni with Italian herbs.</p>
+                <h3 class="special_selectors_4_price" data-aos="fade-up">50.00$</h3>
+                <h5 class="special_selectors_4_h5" data-aos="fade-up">MOST POPULAR</h5>
+            </div>
+            
+            <div class="special_selectors_5">
+                <img src="Images/كيفية-تحضير-كريب-النوتيلا.jpeg" class="special_selectors_5_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_5_h4" data-aos="fade-up">Nutella Crepes</h4>
+                <p class="special_selectors_5_p_1" data-aos="fade-up">Thin and delicate crepes filled with rich Nutella, drizzled with melted chocolate,</p>
+                <p class="special_selectors_5_p_2" data-aos="fade-up">and topped with a dollop of whipped cream for an extra sweet touch.</p>
+                <p class="special_selectors_5_p" data-aos="fade-up">Delicate crepes filled with Nutella, drizzled with chocolate and whipped cream.</p>
+                <h3 class="special_selectors_5_price" data-aos="fade-up">70.00$</h3>
+                <h5 class="special_selectors_5_h5" data-aos="fade-up">LUXURY</h5>
+            </div>
+            
+            <div class="special_selectors_6">
+                <img src="Images/PIAZZA-940x627.jpg" class="special_selectors_6_image" data-aos="fade-up"/>
+                <h4 class="special_selectors_6_h4" data-aos="fade-up">Pizza Margherita</h4>
+                <p class="special_selectors_6_p_1" data-aos="fade-up">Pizza dough, tomato sauce, fresh mozzarella cheese,</p>
+                <p class="special_selectors_6_p_2" data-aos="fade-up">fresh basil leaves, olive oil, salt.</p>
+                <p class="special_selectors_6_p" data-aos="fade-up">Classic pizza with tomato sauce, mozzarella, fresh basil, and a touch of olive oil.</p>
+                <h3 class="special_selectors_6_price" data-aos="fade-up">40.00$</h3>
+            </div>          
+            <h5 class="special_selectors_h5" data-aos="fade-up">During Daily Opening From 9:00A.M To 10:00P.M</h5>
+            <a href="menu.html" class="special_selectors_btn" data-aos="fade-up">VIEW ALL MENU</a>
+        </div>
+
+        <div class="customers_reviews">
+            <div class="customers_reviews_1">
+                <p class="customers_reviews_1_p_1" data-aos="fade-up">Great food and excellent service! Everything was</p>
+                <p class="customers_reviews_1_p_2" data-aos="fade-up">delicious, and the staff was very friendly.</p>
+                <p class="customers_reviews_1_p_3" data-aos="fade-up">I will definitely come back again!</p>
+                <p class="customers_reviews_1_p" data-aos="fade-up">Great food and excellent service! Everything was delicious, and the staff was very friendly. I will definitely come back again!</p>
+                <div class="customers_reviews_1_person">
+                    <img src="Images/man__1_-removebg-preview.png" class="customers_reviews_1_person_image" data-aos="fade-up"/>
+                    <h5 class="customers_reviews_1_person_h5" data-aos="fade-up">Jhon Karen</h5>
+                    <h6 class="customers_reviews_1_person_h6" data-aos="fade-up">Food Vlogger</h6>
+                    <p class="customers_reviews_1_person_stars" data-aos="fade-up">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+            </div>
+            <div class="customers_reviews_2">
+                <p class="customers_reviews_2_p_1" data-aos="fade-up">Five stars without hesitation! Everything was</p>
+                <p class="customers_reviews_2_p_2" data-aos="fade-up">perfect, from the welcome to the delicious</p>
+                <p class="customers_reviews_2_p_3" data-aos="fade-up">desserts at the end.</p>
+                <p class="customers_reviews_2_p" data-aos="fade-up">Five stars without hesitation! Everything was perfect, from the welcome to the delicious desserts at the end.</p>
+                <div class="customers_reviews_2_person">
+                    <img src="Images/man__2_-removebg-preview.png" class="customers_reviews_2_person_image" data-aos="fade-up"/>
+                    <h5 class="customers_reviews_2_person_h5" data-aos="fade-up">Jack Beckham</h5>
+                    <h6 class="customers_reviews_2_person_h6" data-aos="fade-up">Food Vlogger</h6>
+                    <p class="customers_reviews_2_person_stars" data-aos="fade-up">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+            </div>
+            <div class="customers_reviews_3">
+                <p class="customers_reviews_3_p_1" data-aos="fade-up">Excellent value for money! The prices are</p>
+                <p class="customers_reviews_3_p_2" data-aos="fade-up">very reasonable compared to the quality</p>
+                <p class="customers_reviews_3_p_3" data-aos="fade-up">and outstanding service.</p>
+                <p class="customers_reviews_3_p" data-aos="fade-up">Excellent value for money! The prices are very reasonable compared to the quality and outstanding service.</p>
+                <div class="customers_reviews_3_person">
+                    <img src="Images/man__3_-removebg-preview.png" class="customers_reviews_3_person_image" data-aos="fade-up"/>
+                    <h5 class="customers_reviews_3_person_h5" data-aos="fade-up">Basel Amer</h5>
+                    <h6 class="customers_reviews_3_person_h6" data-aos="fade-up">Food Vlogger</h6>
+                    <p class="customers_reviews_3_person_stars" data-aos="fade-up">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve" id="booking">
+            <h2 class="reserve_h2" data-aos="fade-up">Online Reservation</h2>
+            <h6 class="reserve_h6" data-aos="fade-up">Booking request <span class="reserve_phone_number_span">+201554134758</span> or fill out the order form</h6>
+            <form>
+                <input type="text" data-aos="fade-up" class="user_name" name="user_name" placeholder="Your Name" required/>
+                <input type="text" data-aos="fade-up" class="user_phone_number" name="user_phone_number" placeholder="Phone Number" required/>
+                <select name="Persons" class="person_numbers_list" data-aos="fade-up">
+                    <option value="1Person">1 Person</option>
+                    <option value="2Person">2 Person</option>
+                    <option value="3Person">3 Person</option>
+                    <option value="4Person">4 Person</option>
+                    <option value="5Person">5 Person</option>
+                    <option value="6Person">6 Person</option>
+                </select>
+                <input type="date" data-aos="fade-up" class="reserve_date" placeholder="Date" required/>
+                <input type="time" data-aos="fade-up" class="reserve_time" placeholder="Time" required/>
+                <textarea placeholder="Message" data-aos="fade-up"></textarea>
+                <button class="reserve_btn" data-aos="fade-up">Book Table</button>
+            </form>
+        </div>
+
+        <footer id="contact">
+            <h1 class="footer_h1" data-aos="fade-up">FreshEat</h1>
+            <div class="footer_pages">
+                <a href="index.html" class="footer_pages_home" data-aos="fade-up">HOME</a>
+                <a href="#about" class="footer_pages_about" data-aos="fade-up">ABOUT US</a>
+                <a href="#menu" class="footer_pages_menu" data-aos="fade-up">MENU</a>
+                <a href="#booking" class="footer_pages_booking" data-aos="fade-up">BOOKING</a>
+            </div>
+            <div class="footer_social_media">
+                <a href="#" class="footer_facebook" data-aos="fade-up">FACEBOOK</a>
+                <a href="#" class="footer_instagram" data-aos="fade-up">INSTAGRAM</a>
+                <a href="#" class="footer_twitter" data-aos="fade-up">X</a>
+                <a href="#" class="footer_linkedin" data-aos="fade-up">LINKEDIN</a>
+            </div>
+            <div class="contact">
+                <h2 class="contact_h2" data-aos="fade-up">Contact Us</h2>
+                <div class="contact_contact">
+                    <div class="booking_request">
+                        <h5 class="booking_request_h5" data-aos="fade-up">Booking Request</h5>
+                        <h4 class="booking_request_h6" data-aos="fade-up">+201554134758</h4>
+                    </div>
+                    <div class="location">
+                        <h5 class="location_h5" data-aos="fade-up">Location</h5>
+                        <h6 class="location_h6" data-aos="fade-up">Shoubra Khalfon - Sheben Elkom - Monufia - Egypt</h6>
+                    </div>
+                    <div class="lunch_time">
+                        <h5 class="lunch_time_h5" data-aos="fade-up">Lunch Time</h5>
+                        <h6 class="lunch_time_h6_first_part" data-aos="fade-up">Saturday To Thrusday</h6>
+                        <h6 class="lunch_time_h6_last_part" data-aos="fade-up">11:00 p.m - 4:30 p.m</h6>
+                    </div>
+                    <div class="dinner_time">
+                        <h5 class="dinner_time_h5" data-aos="fade-up">Dinner Time</h5>
+                        <h6 class="dinner_time_h6_first_part" data-aos="fade-up">Saturday To Thrusday</h6>
+                        <h6 class="dinner_time_h6_last_part" data-aos="fade-up">6:00 p.m - 11:30 p.m</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="JS/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
